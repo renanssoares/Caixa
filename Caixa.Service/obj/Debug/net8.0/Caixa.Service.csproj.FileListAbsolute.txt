@@ -1,0 +1,15 @@
+E:\Renan\PROJETOS\Caixa\Caixa.Service\bin\Debug\net8.0\Caixa.Service.deps.json
+E:\Renan\PROJETOS\Caixa\Caixa.Service\bin\Debug\net8.0\Caixa.Service.dll
+E:\Renan\PROJETOS\Caixa\Caixa.Service\bin\Debug\net8.0\Caixa.Service.pdb
+E:\Renan\PROJETOS\Caixa\Caixa.Service\bin\Debug\net8.0\Caixa.Infra.dll
+E:\Renan\PROJETOS\Caixa\Caixa.Service\bin\Debug\net8.0\Caixa.Infra.pdb
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.csproj.AssemblyReference.cache
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.AssemblyInfoInputs.cache
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.AssemblyInfo.cs
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.csproj.CoreCompileInputs.cache
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.csproj.CopyComplete
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.dll
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\refint\Caixa.Service.dll
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.pdb
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\ref\Caixa.Service.dll

@@ -1,0 +1,12 @@
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\bin\Debug\net8.0\Caixa.Infra.deps.json
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\bin\Debug\net8.0\Caixa.Infra.dll
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\bin\Debug\net8.0\Caixa.Infra.pdb
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\Caixa.Infra.csproj.AssemblyReference.cache
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\Caixa.Infra.GeneratedMSBuildEditorConfig.editorconfig
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\Caixa.Infra.AssemblyInfoInputs.cache
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\Caixa.Infra.AssemblyInfo.cs
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\Caixa.Infra.csproj.CoreCompileInputs.cache
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\Caixa.Infra.dll
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\refint\Caixa.Infra.dll
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\Caixa.Infra.pdb
+E:\Renan\PROJETOS\Caixa\Caixa.Infra\obj\Debug\net8.0\ref\Caixa.Infra.dll
