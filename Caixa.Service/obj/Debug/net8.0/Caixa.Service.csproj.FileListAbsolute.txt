@@ -8,6 +8,7 @@ E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.GeneratedMS
 E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.AssemblyInfoInputs.cache
 E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.AssemblyInfo.cs
 E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.csproj.CoreCompileInputs.cache
+E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.sourcelink.json
 E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.csproj.CopyComplete
 E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\Caixa.Service.dll
 E:\Renan\PROJETOS\Caixa\Caixa.Service\obj\Debug\net8.0\refint\Caixa.Service.dll

@@ -1,11 +1,6 @@
 ﻿using Caixa.Infra.Entities;
 using Caixa.Infra.Entities.Request.Transacao;
 using Caixa.Infra.Entities.Response.Transacao;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Caixa.Service.Interface
 {

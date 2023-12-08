@@ -1,18 +1,10 @@
 ﻿using Caixa.Infra.Entities;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
-using Caixa.Infra.Entities.Request.Transacao;
-using Caixa.Infra.Entities.Response.Transacao;
-using Caixa.Infra.Entities.Response.Comerciante;
 using Caixa.Infra.Entities.Request.Comerciante;
-using Microsoft.Extensions.Configuration;
-using System.Security.Cryptography;
+using Caixa.Infra.Entities.Response.Comerciante;
 using Caixa.Infra.Interface;
+using Dapper;
+using Microsoft.Extensions.Configuration;
+using System.Data.SqlClient;
 
 namespace Caixa.Infra.Repositories
 {

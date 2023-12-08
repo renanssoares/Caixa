@@ -1,11 +1,8 @@
 ﻿using Caixa.Infra.Entities;
 using Caixa.Infra.Entities.Request.Comerciante;
 using Caixa.Infra.Entities.Response.Comerciante;
-using Caixa.Infra.Entities.Response.Transacao;
 using Caixa.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Caixa.Api.Controllers
 {
@@ -40,6 +37,9 @@ namespace Caixa.Api.Controllers
         [HttpPost]
         public async Task<bool> Post([FromBody] InserirComerciante request)
         {
+            Validation.Validation.StringNuloOuVazio(request.Nome, nameof(request.Nome));
+            Validation.Validation.CnpjInvalido(request.Cnpj, nameof(request.Cnpj));
+
             var result = await _service.InserirComerciante(request);
             return result;
         }
@@ -48,6 +48,9 @@ namespace Caixa.Api.Controllers
         [HttpPut("{id}")]
         public async Task<bool> Put(int id, [FromBody] AlterarComerciante request)
         {
+            Validation.Validation.StringNuloOuVazio(request.Nome, nameof(request.Nome));
+            Validation.Validation.CnpjInvalido(request.Cnpj, nameof(request.Cnpj));
+
             var result = await _service.AlterarComerciante(id, request);
             return result;
         }

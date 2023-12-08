@@ -27,6 +27,7 @@ E:\Renan\PROJETOS\Caixa\Caixa.Api\obj\Debug\net8.0\Caixa.Api.AssemblyInfo.cs
 E:\Renan\PROJETOS\Caixa\Caixa.Api\obj\Debug\net8.0\Caixa.Api.csproj.CoreCompileInputs.cache
 E:\Renan\PROJETOS\Caixa\Caixa.Api\obj\Debug\net8.0\Caixa.Api.MvcApplicationPartsAssemblyInfo.cs
 E:\Renan\PROJETOS\Caixa\Caixa.Api\obj\Debug\net8.0\Caixa.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\Renan\PROJETOS\Caixa\Caixa.Api\obj\Debug\net8.0\Caixa.Api.sourcelink.json
 E:\Renan\PROJETOS\Caixa\Caixa.Api\obj\Debug\net8.0\staticwebassets.build.json
 E:\Renan\PROJETOS\Caixa\Caixa.Api\obj\Debug\net8.0\staticwebassets.development.json
 E:\Renan\PROJETOS\Caixa\Caixa.Api\obj\Debug\net8.0\staticwebassets\msbuild.Caixa.Api.Microsoft.AspNetCore.StaticWebAssets.props

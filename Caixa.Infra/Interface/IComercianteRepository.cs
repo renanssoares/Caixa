@@ -1,13 +1,6 @@
-﻿using Caixa.Infra.Entities.Request.Transacao;
-using Caixa.Infra.Entities.Response.Transacao;
-using Caixa.Infra.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Caixa.Infra.Entities.Response.Comerciante;
+﻿using Caixa.Infra.Entities;
 using Caixa.Infra.Entities.Request.Comerciante;
+using Caixa.Infra.Entities.Response.Comerciante;
 
 namespace Caixa.Infra.Interface
 {

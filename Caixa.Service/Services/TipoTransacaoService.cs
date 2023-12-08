@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Caixa.Infra.Entities;
-using Caixa.Infra.Entities.Request;
-using Caixa.Infra.Interface;
+﻿using Caixa.Infra.Interface;
 using Caixa.Service.Dto;
 using Caixa.Service.Interface;
 
@@ -21,9 +13,9 @@ namespace Caixa.Service.Services
             _repository = repository;
         }
           
-        public IEnumerable<TipoTransacaoDto> ObterTransacoes()
+        public async Task<IEnumerable<TipoTransacaoDto>> ObterTransacoes()
         {
-            var retorno = _repository.ObterTransacoes();
+            var retorno = await _repository.ObterTransacoes();
 
             List<TipoTransacaoDto> ret = new List<TipoTransacaoDto>();
 

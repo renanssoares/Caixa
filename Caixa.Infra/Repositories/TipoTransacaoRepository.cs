@@ -1,14 +1,8 @@
 ﻿using Caixa.Infra.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
-using System.Data.SqlClient;
 using Caixa.Infra.Interface;
+using Dapper;
 using Microsoft.Extensions.Configuration;
+using System.Data.SqlClient;
 
 namespace Caixa.Infra.Repositories
 {
@@ -21,22 +15,35 @@ namespace Caixa.Infra.Repositories
             connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        public IEnumerable<TipoTransacao> ObterTransacoes()
+        public async Task<IEnumerable<TipoTransacao>> ObterTransacoes()
         {
-            
             using (var sqlConn = new SqlConnection(connectionString))
             {
                 var query = "SELECT * FROM TipoTransacao";
 
-                var result = sqlConn.Query<TipoTransacao>(query);
+                var result = await sqlConn.QueryAsync<TipoTransacao>(query);
 
                 return result;
-
             }
-
-
         }
 
+        public async Task<TipoTransacao> ObterTipoTransacao(int id)
+        {
+            using (var sqlConn = new SqlConnection(connectionString))
+            {
+                var query = $@"SELECT * FROM TipoTransacao
+                               WHERE Id = @Id";
+
+                var param = new
+                {
+                    Id = id
+                };
+
+                var result = await sqlConn.QueryFirstOrDefaultAsync<TipoTransacao>(query, param);
+
+                return result;
+            }
+        }
 
     }
 }

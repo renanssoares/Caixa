@@ -3,11 +3,6 @@ using Caixa.Infra.Entities.Request.Comerciante;
 using Caixa.Infra.Entities.Response.Comerciante;
 using Caixa.Infra.Interface;
 using Caixa.Service.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Caixa.Service.Services
 {

@@ -1,10 +1,7 @@
 ﻿using Caixa.Infra.Entities;
 using Caixa.Infra.Entities.Request.Transacao;
 using Caixa.Infra.Entities.Response.Transacao;
-using Caixa.Service.Dto;
 using Caixa.Service.Interface;
-using Caixa.Service.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Caixa.Api.Controllers
@@ -48,6 +45,10 @@ namespace Caixa.Api.Controllers
         [HttpPost]
         public async Task<bool> Post([FromBody] InserirTransacao request)
         {
+            Validation.Validation.DecimalZeroOuMenor(request.Valor, nameof(request.Valor));
+            Validation.Validation.IntZeroOuMenor(request.ComercianteId, nameof(request.Valor));
+            Validation.Validation.IntZeroOuMenor(request.TipoTransacaoId, nameof(request.Valor));
+
             var result = await _service.InserirTransacao(request);
             return result;
         }
@@ -56,6 +57,9 @@ namespace Caixa.Api.Controllers
         [HttpPut("{id}")]
         public async Task<bool> Put(int id, [FromBody] AlterarTransacao request)
         {
+            Validation.Validation.DecimalZeroOuMenor(request.Valor, nameof(request.Valor));
+            Validation.Validation.IntZeroOuMenor(request.Id, nameof(request.Valor));
+
             var result = await _service.AlterarTransacao(id, request);
             return result;
         }

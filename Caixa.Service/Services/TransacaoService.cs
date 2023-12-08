@@ -2,23 +2,23 @@
 using Caixa.Infra.Entities.Request.Transacao;
 using Caixa.Infra.Entities.Response.Transacao;
 using Caixa.Infra.Interface;
-using Caixa.Service.Dto;
 using Caixa.Service.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Caixa.Service.Services
 {
     public class TransacaoService : ITransacaoService
     {
         private readonly ITransacaoRepository _repository;
+        private readonly ITipoTransacaoRepository _tiporepository;
+        private readonly IComercianteRepository _comercianteRepository;
 
-        public TransacaoService(ITransacaoRepository repository)
+        public TransacaoService(ITransacaoRepository repository,
+                                ITipoTransacaoRepository tiporepository,
+                                IComercianteRepository comercianteRepository)
         {
             _repository = repository;
+            _tiporepository = tiporepository;
+            _comercianteRepository = comercianteRepository;
         }
 
         public async Task<Transacao> ObterTransacao(int id)
@@ -41,12 +41,17 @@ namespace Caixa.Service.Services
 
         public async Task<bool> InserirTransacao(InserirTransacao request)
         {
+            await ValidaComerciante(request.ComercianteId);
+            await ValidaTipoTransacao(request.TipoTransacaoId);
+
             var result = await _repository.InserirTransacao(request);
             return result;
         }
-
+ 
         public async Task<bool> AlterarTransacao(int id, AlterarTransacao request)
         {
+            await ValidaComerciante(request.ComercianteId); 
+
             var result = await _repository.AlterarTransacao(id, request);
             return result;
         }
@@ -55,6 +60,20 @@ namespace Caixa.Service.Services
         {
             var result = await _repository.DeletarTransacao(id);
             return result;
+        }
+
+        private async Task ValidaTipoTransacao(int id)
+        {
+            var tipo = await _tiporepository.ObterTipoTransacao(id);
+            if (tipo == null)
+                throw new ArgumentNullException(nameof(tipo), "Tipo transação não encontrado.");
+        }
+
+        private async Task ValidaComerciante(int id)
+        {
+            var comerciante = await _comercianteRepository.ObterComerciante(id);
+            if (comerciante == null)
+                throw new ArgumentNullException(nameof(comerciante), "Comerciante não encontrado.");
         }
     }
 }
