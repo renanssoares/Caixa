@@ -1,4 +1,4 @@
-#Caixa
+# Caixa
 
 Projeto feito em C#, .NET 8.0, onde é possível inserir comerciantes e transações e obter o saldo consolidado com base na data informada.
 
