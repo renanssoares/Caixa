@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Caixa.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35698b78fd452f308cdc46836140d8c0dd0f064a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Caixa.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Caixa.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

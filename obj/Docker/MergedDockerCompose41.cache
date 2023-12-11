@@ -1,0 +1,50 @@
+name: dockercompose5646958317986446612
+services:
+  caixa.api:
+    build:
+      context: E:\Renan\PROJETOS\Caixa
+      dockerfile: Caixa.Api/Dockerfile
+    container_name: AppServerContainer
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    hostname: AppServer
+    image: caixaapi
+    networks:
+      app-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\RENAN\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\RENAN\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  sqlserver:
+    build:
+      context: E:\Renan\PROJETOS\Caixa\db
+      dockerfile: Dockerfile
+    networks:
+      app-network: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "14331"
+        protocol: tcp
+networks:
+  app-network:
+    name: dockercompose5646958317986446612_app-network
+    driver: bridge

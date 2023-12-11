@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  caixa.api:
+    image: ${DOCKER_REGISTRY-}caixaapi
+    build:
+      context: .
+      dockerfile: Caixa.Api/Dockerfile
